@@ -1,0 +1,13 @@
+let Guest_list : string[]=["Unaiza","Hashir","Muhammad"];
+ for(let i=0; i<Guest_list.length;i++){
+    console.log("dear Sir/Madam " + Guest_list[i] , ",\n\nWe glad to invite you on dinner tomorrow.\n\n Thank you");
+ }
+
+// one guest not attend the dinner
+let Guest_absent :string="Hashir";
+let new_guest : string ='Sir Zia';
+Guest_list[1] = new_guest;
+for(let i=0; i<Guest_list.length;i++){
+    console.log("dear Sir/Madam " + Guest_list[i] , ",\n\nWe glad to invite you on dinner tomorrow.\n\n Thank you");
+}
+console.log(`Mr .${Guest_absent}will not attend the dinner.`)
